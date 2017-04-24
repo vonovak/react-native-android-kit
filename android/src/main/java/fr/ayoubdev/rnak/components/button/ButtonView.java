@@ -9,7 +9,6 @@ import android.widget.Button;
 public class ButtonView extends Button {
 	public ButtonView(Context context) {
 		super(context);
-
 		this.setAllCaps(false);
 	}
 
@@ -19,13 +18,9 @@ public class ButtonView extends Button {
 
 	public void setBackgroundColor(String color) {
 		this.getBackground().setColorFilter(Color.parseColor(color), PorterDuff.Mode.MULTIPLY);
-
-		return;
 	}
 
 	public void setTextSize(int size) {
 		super.setTextSize(TypedValue.COMPLEX_UNIT_SP, size);
-
-		return;
 	}
 }
